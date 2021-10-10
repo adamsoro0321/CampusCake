@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/huit"
+        tools:context=".activity.venteGateauActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/deux_cent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/huit">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title_inflate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_inflate"
+                    android:padding="?android:attr/scrollbarSize"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/prize_inflate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_inflate"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/prize_backgroun"
+                    android:padding="?android:attr/scrollbarSize"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/descrip_inflate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_inflate"
+                    android:padding="?android:attr/scrollbarSize"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/img_inflate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/cent_cinq"
+                    app:srcCompat="@drawable/cake" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/valid_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="valider" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_send"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/edit_box"
+            android:layout_width="@dimen/trois_cent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="?android:attr/scrollbarSize"
+            android:paddingStart="?android:attr/scrollbarSize">
+
+            <LinearLayout
+
+                android:id="@+id/img_box_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/huit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter une photo" />
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="@dimen/quarent"
+                    android:layout_height="@dimen/quarent"
+                    app:srcCompat="@drawable/ic_camra_alt_foreground" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_box_contain"
+                android:text="Nom du produit" />
+
+            <TextView
+                android:id="@+id/title_product_prx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_nam"
+                android:text="prix du produit" />
+
+            <TextView
+                android:id="@+id/title_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_prize"
+                android:text="descrition du produit" />
+
+            <EditText
+                android:id="@+id/product_prize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_product_prx"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/prouct_descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_description"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/product_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_nom"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

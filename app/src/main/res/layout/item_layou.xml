@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="?android:attr/scrollbarSize">
+
+    <ImageView
+        android:id="@+id/img_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="@dimen/deux_cent"
+        android:maxHeight="@dimen/deux_cent"
+        app:srcCompat="@drawable/ic_food_foreground" />
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_id"
+        android:padding="?android:attr/scrollbarSize"
+        android:textColor="@color/design_default_color_secondary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descrip_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_id"
+        android:paddingStart="?android:attr/scrollbarSize" />
+</RelativeLayout>

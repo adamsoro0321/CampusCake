@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "639643529814",
+    "project_id": "campuscake",
+    "storage_bucket": "campuscake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639643529814:android:0ea1911adbc5243ef741f7",
+        "android_client_info": {
+          "package_name": "com.campus.CampusCake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639643529814-8qipd1cup3jhk03ucvhvqv93lqn4t67p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhGaTz9WhN2gwx-RZp7HEVCCpo-8kwj9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639643529814-8qipd1cup3jhk03ucvhvqv93lqn4t67p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
